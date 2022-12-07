@@ -1,0 +1,984 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "slot",
+						"type": "uint8"
+					}
+				],
+				"name": "getPendingWithdrawalsAtSlot",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "getTokenTrail",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BLOCKS_PER_EPOCH",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "currentEon",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "hasMissedCheckpointSubmission",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "DEPOSITS_KEPT",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "holder",
+						"type": "address"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					}
+				],
+				"name": "getWalletPendingWithdrawalAmountAtEon",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"name": "recipient",
+						"type": "address"
+					}
+				],
+				"name": "getChallenge",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					}
+				],
+				"name": "getDepositsAtEon",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "slot",
+						"type": "uint8"
+					}
+				],
+				"name": "getDepositsAtSlot",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "EXTENDED_BLOCKS_PER_EPOCH",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getServerContractStateVariables",
+				"outputs": [
+					{
+						"name": "parentChainAccumulator",
+						"type": "bytes32"
+					},
+					{
+						"name": "lastSubmissionEon",
+						"type": "uint256"
+					},
+					{
+						"name": "lastCheckpointRoot",
+						"type": "bytes32"
+					},
+					{
+						"name": "isCheckpointSubmitted",
+						"type": "bool"
+					},
+					{
+						"name": "missedCheckpointSubmission",
+						"type": "bool"
+					},
+					{
+						"name": "liveChallenges",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					}
+				],
+				"name": "getPendingWithdrawalsAtEon",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "operator",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"name": "slot",
+						"type": "uint8"
+					}
+				],
+				"name": "getWalletDepositAggregateAtSlot",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "slot",
+						"type": "uint8"
+					}
+				],
+				"name": "getCheckpointAtSlot",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "bytes32"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "holder",
+						"type": "address"
+					}
+				],
+				"name": "getCurrentEonDepositsWithdrawals",
+				"outputs": [
+					{
+						"name": "currentEonDeposits",
+						"type": "uint256"
+					},
+					{
+						"name": "currentEonWithdrawals",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "message",
+						"type": "bytes32"
+					},
+					{
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"name": "s",
+						"type": "bytes32"
+					},
+					{
+						"name": "v",
+						"type": "uint8"
+					}
+				],
+				"name": "signedMessageECRECOVER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "trail",
+						"type": "uint64"
+					}
+				],
+				"name": "getTokenAtTrail",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "currentEra",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "hasOutstandingChallenges",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "eonNumber",
+						"type": "uint256"
+					},
+					{
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "getServerContractLedgerStateVariables",
+				"outputs": [
+					{
+						"name": "pendingWithdrawals",
+						"type": "uint256"
+					},
+					{
+						"name": "confirmedWithdrawals",
+						"type": "uint256"
+					},
+					{
+						"name": "deposits",
+						"type": "uint256"
+					},
+					{
+						"name": "totalBalance",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "genesis",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "eon",
+						"type": "uint256"
+					}
+				],
+				"name": "getLiveChallenges",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BLOCKS_PER_EON",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "EONS_KEPT",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "holder",
+						"type": "address"
+					}
+				],
+				"name": "getClientContractStateVariables",
+				"outputs": [
+					{
+						"name": "latestCheckpointEonNumber",
+						"type": "uint256"
+					},
+					{
+						"name": "latestCheckpointsMerkleRoots",
+						"type": "bytes32[5]"
+					},
+					{
+						"name": "latestCheckpointsLiveChallenges",
+						"type": "uint256[5]"
+					},
+					{
+						"name": "currentEonDeposits",
+						"type": "uint256"
+					},
+					{
+						"name": "previousEonDeposits",
+						"type": "uint256"
+					},
+					{
+						"name": "secondPreviousEonDeposits",
+						"type": "uint256"
+					},
+					{
+						"name": "pendingWithdrawals",
+						"type": "uint256[2][]"
+					},
+					{
+						"name": "holderBalance",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "holder",
+						"type": "address"
+					}
+				],
+				"name": "getIsWalletRecovered",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "blocksPerEon",
+						"type": "uint256"
+					},
+					{
+						"name": "operator",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "MIN_CHALLENGE_GAS_COST",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "lastSubmissionEon",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "slot",
+						"type": "uint8"
+					}
+				],
+				"name": "getConfirmedWithdrawalsAtSlot",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "slot",
+						"type": "uint8"
+					}
+				],
+				"name": "getParentChainAccumulatorAtSlot",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "eon",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "merkleRoot",
+						"type": "bytes32"
+					}
+				],
+				"name": "CheckpointSubmission",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposit",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "requestor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "WithdrawalRequest",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "requestor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "WithdrawalConfirmation",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "sender",
+						"type": "address"
+					}
+				],
+				"name": "ChallengeIssued",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "eon",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "trail",
+						"type": "uint64"
+					},
+					{
+						"indexed": false,
+						"name": "allotmentChain",
+						"type": "bytes32[]"
+					},
+					{
+						"indexed": false,
+						"name": "membershipChain",
+						"type": "bytes32[]"
+					},
+					{
+						"indexed": false,
+						"name": "values",
+						"type": "uint256[]"
+					},
+					{
+						"indexed": false,
+						"name": "lrDeltasPassiveMark",
+						"type": "uint256[2][3]"
+					},
+					{
+						"indexed": false,
+						"name": "activeStateChecksum",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "passiveChecksum",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "s",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "v",
+						"type": "uint8"
+					}
+				],
+				"name": "StateUpdate",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BimodalProxy.sol": "BimodalProxy"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BimodalLib.sol": {
+			"keccak256": "0x970571af98a4f6ca4f5d133ac7891429b4aae712014d047610fbc5085fd873b0",
+			"urls": [
+				"bzzr://6503a1920ba11333c2037fabed15c9293388243265837cd42b5ded068abfb8a6"
+			]
+		},
+		"contracts/BimodalProxy.sol": {
+			"keccak256": "0xb9c2eb3d5fc683b358b5859cb6ca00961ca54563f092ef9c9112476bbbf486e3",
+			"urls": [
+				"bzzr://a830af00089cbc6e1742fd2b8eb5ad62ad004ffb1e75bd114a25b3d4df49b008"
+			]
+		},
+		"contracts/ERC20.sol": {
+			"keccak256": "0xd5a653c81eddef74a22c4db9d779e193f86c6fda781c01e11b7b8df128e74bbd",
+			"urls": [
+				"bzzr://1a82dc0db682e55c7e8c76b0bfb61e78d8c1f97ba5d0e4893ed03f2b94ce3288"
+			]
+		},
+		"contracts/SafeMath/SafeMathLib256.sol": {
+			"keccak256": "0x8740538d437a7ace9712a59c994f7f77c9d1150ea28812834e66dd5cd713e5d4",
+			"urls": [
+				"bzzr://978ca097a9bf804f53db61e53215fd916dd733ef54e3af454aef115063cdeeb6"
+			]
+		}
+	},
+	"version": 1
+}

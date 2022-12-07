@@ -1,0 +1,436 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "token",
+						"type": "ERC20"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					}
+				],
+				"name": "getPendingWithdrawalsAtEon",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					}
+				],
+				"name": "currentEon",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					}
+				],
+				"name": "getLiveChallenges",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "blocksPerEon",
+						"type": "uint256"
+					},
+					{
+						"name": "operator",
+						"type": "address"
+					}
+				],
+				"name": "init",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					}
+				],
+				"name": "currentEra",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "message",
+						"type": "bytes32"
+					},
+					{
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"name": "s",
+						"type": "bytes32"
+					},
+					{
+						"name": "v",
+						"type": "uint8"
+					}
+				],
+				"name": "signedMessageECRECOVER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "aggregate",
+						"type": "BimodalLib.AmountAggregate storage"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "addToAggregate",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "token",
+						"type": "ERC20"
+					},
+					{
+						"name": "holder",
+						"type": "address"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					}
+				],
+				"name": "getWalletPendingWithdrawalAmountAtEon",
+				"outputs": [
+					{
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "token",
+						"type": "ERC20"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "addToRunningPendingWithdrawals",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "token",
+						"type": "ERC20"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					},
+					{
+						"name": "latestEon",
+						"type": "uint256"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "deductFromRunningPendingWithdrawals",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "targetEon",
+						"type": "uint256"
+					},
+					{
+						"name": "latestEon",
+						"type": "uint256"
+					}
+				],
+				"name": "getOrCreateCheckpoint",
+				"outputs": [
+					{
+						"name": "checkpoint",
+						"type": "BimodalLib.Checkpoint storage"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "token",
+						"type": "ERC20"
+					},
+					{
+						"name": "holder",
+						"type": "address"
+					}
+				],
+				"name": "getCurrentEonDepositsWithdrawals",
+				"outputs": [
+					{
+						"name": "currentEonDeposits",
+						"type": "uint256"
+					},
+					{
+						"name": "currentEonWithdrawals",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "aggregate",
+						"type": "BimodalLib.AmountAggregate storage"
+					}
+				],
+				"name": "clearAggregate",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "self",
+						"type": "BimodalLib.Ledger storage"
+					},
+					{
+						"name": "eon",
+						"type": "uint256"
+					},
+					{
+						"name": "token",
+						"type": "ERC20"
+					},
+					{
+						"name": "participant",
+						"type": "address"
+					},
+					{
+						"name": "operation",
+						"type": "BimodalLib.Operation"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "appendOperationToEonAccumulator",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"addToRunningPendingWithdrawals(BimodalLib.Ledger storage,ERC20,uint256,uint256)": {
+					"notice": "Increases the total pending withdrawal amount at a specific eon."
+				},
+				"appendOperationToEonAccumulator(BimodalLib.Ledger storage,uint256,ERC20,address,BimodalLib.Operation,uint256)": {
+					"notice": "This method is used to embed a parent-chain operation into the accumulator through hashing its values. The on-chain accumulator is used to provide a reference with respect to which the operator can commit checkpoints."
+				},
+				"currentEon(BimodalLib.Ledger storage)": {
+					"notice": "This method calculates the current eon number using the genesis block number and eon duration."
+				},
+				"currentEra(BimodalLib.Ledger storage)": {
+					"notice": "This method calculates the current era number"
+				},
+				"deductFromRunningPendingWithdrawals(BimodalLib.Ledger storage,ERC20,uint256,uint256,uint256)": {
+					"notice": "Decreases the total pending withdrawal amount at a specific eon."
+				},
+				"getCurrentEonDepositsWithdrawals(BimodalLib.Ledger storage,ERC20,address)": {
+					"notice": "Get the total amounts deposited and pending withdrawal at the current eon."
+				},
+				"getLiveChallenges(BimodalLib.Ledger storage,uint256)": {
+					"notice": "Get the total number of live challenges for a specific eon."
+				},
+				"getOrCreateCheckpoint(BimodalLib.Ledger storage,uint256,uint256)": {
+					"notice": "Get checkpoint data or assume it to be empty if non-existant."
+				},
+				"getPendingWithdrawalsAtEon(BimodalLib.Ledger storage,ERC20,uint256)": {
+					"notice": "Retrieves the total pending withdrawal amount at a specific eon."
+				},
+				"getWalletPendingWithdrawalAmountAtEon(BimodalLib.Ledger storage,ERC20,address,uint256)": {
+					"notice": "Get the total amount pending withdrawal by a wallet at a specific eon."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BimodalLib.sol": "BimodalLib"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BimodalLib.sol": {
+			"keccak256": "0x970571af98a4f6ca4f5d133ac7891429b4aae712014d047610fbc5085fd873b0",
+			"urls": [
+				"bzzr://6503a1920ba11333c2037fabed15c9293388243265837cd42b5ded068abfb8a6"
+			]
+		},
+		"contracts/ERC20.sol": {
+			"keccak256": "0xd5a653c81eddef74a22c4db9d779e193f86c6fda781c01e11b7b8df128e74bbd",
+			"urls": [
+				"bzzr://1a82dc0db682e55c7e8c76b0bfb61e78d8c1f97ba5d0e4893ed03f2b94ce3288"
+			]
+		},
+		"contracts/SafeMath/SafeMathLib256.sol": {
+			"keccak256": "0x8740538d437a7ace9712a59c994f7f77c9d1150ea28812834e66dd5cd713e5d4",
+			"urls": [
+				"bzzr://978ca097a9bf804f53db61e53215fd916dd733ef54e3af454aef115063cdeeb6"
+			]
+		}
+	},
+	"version": 1
+}

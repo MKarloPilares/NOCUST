@@ -1,0 +1,323 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getChains",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_libraryAddress",
+						"type": "address"
+					}
+				],
+				"name": "setLibraryAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "blocksPerEon",
+						"type": "uint256"
+					}
+				],
+				"name": "createClone",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "libraryAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "CommitChainAddresses",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_chainCloneOwner",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "chainClone",
+						"type": "address"
+					}
+				],
+				"name": "CloneCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipRenounced",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"renounceOwnership()": {
+					"details": "Allows the current owner to relinquish control of the contract."
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"_newOwner": "The address to transfer ownership to."
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {
+				"renounceOwnership()": {
+					"notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ChainClone.sol": "ChainCloneFactory"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BimodalLib.sol": {
+			"keccak256": "0x970571af98a4f6ca4f5d133ac7891429b4aae712014d047610fbc5085fd873b0",
+			"urls": [
+				"bzzr://6503a1920ba11333c2037fabed15c9293388243265837cd42b5ded068abfb8a6"
+			]
+		},
+		"contracts/BimodalProxy.sol": {
+			"keccak256": "0xb9c2eb3d5fc683b358b5859cb6ca00961ca54563f092ef9c9112476bbbf486e3",
+			"urls": [
+				"bzzr://a830af00089cbc6e1742fd2b8eb5ad62ad004ffb1e75bd114a25b3d4df49b008"
+			]
+		},
+		"contracts/ChainClone.sol": {
+			"keccak256": "0x46e98357d779b3f20618dfcd97dd130fb666cade14f4fae6d111488da4e5a2c7",
+			"urls": [
+				"bzzr://0bf210a8decac99805f9a090eb5d254b00f6d6a8027d19b7f63cf57fccb62f0d"
+			]
+		},
+		"contracts/ChallengeLib.sol": {
+			"keccak256": "0xff4f7d5a38eccecb1e9e4b860d23e4d21d5d56a954635f9ec13c76605d1bb65b",
+			"urls": [
+				"bzzr://a41540e18e5528b7181d9e2658360db7e4d232a793d568af3b35a3ea346f6174"
+			]
+		},
+		"contracts/ChallengeProxy.sol": {
+			"keccak256": "0xe45002807f7631dd90a3026f4c3028d657a5c73855ad5dfa28d0190e73328c7e",
+			"urls": [
+				"bzzr://7604f6bdf8e8d15bf015dd5a22f7a73739daeb7f6f7c4f2c82353b0adab46aac"
+			]
+		},
+		"contracts/CloneFactory.sol": {
+			"keccak256": "0x53a5f92832927e5bb2e97b85b00fd9a41af94b097292290655a6034c3b52ff96",
+			"urls": [
+				"bzzr://e84ed7de6c46f42792812b53ebcfe585b572ce0a341747b38e93812cbcd3ca92"
+			]
+		},
+		"contracts/DepositLib.sol": {
+			"keccak256": "0xa699ec5f149d6354d1e8eb0080187d3680965605fbce00992e56471f2c273aa6",
+			"urls": [
+				"bzzr://17f7ee111533fea1884610c02ae0109b16cf70b3de32e0ba8176709f3f758312"
+			]
+		},
+		"contracts/DepositProxy.sol": {
+			"keccak256": "0xaa6a85f6cbfe104c2b81d272aa20fe6303281d0d6a43f87a2cd000376aa4836f",
+			"urls": [
+				"bzzr://a9d050ae69b6a5a74f30633fbfdd0b4d04bed231769706139de0aef769eff245"
+			]
+		},
+		"contracts/ERC20.sol": {
+			"keccak256": "0xd5a653c81eddef74a22c4db9d779e193f86c6fda781c01e11b7b8df128e74bbd",
+			"urls": [
+				"bzzr://1a82dc0db682e55c7e8c76b0bfb61e78d8c1f97ba5d0e4893ed03f2b94ce3288"
+			]
+		},
+		"contracts/MerkleVerifier.sol": {
+			"keccak256": "0x99255572f7f2efebef451e80965201bd95f18dc4fb1f556f1c592c36913c2ed8",
+			"urls": [
+				"bzzr://916e5dfc8d2219851db596b3d228534013531a2242be0e83c40da769b78399c6"
+			]
+		},
+		"contracts/NOCUSTCommitChain.sol": {
+			"keccak256": "0xcc94f351842b173b08ccf6ba9708c1fe9329ee91cc579ddcceee3a0612cb0375",
+			"urls": [
+				"bzzr://4a1442848a54ea01afe2a2ea9a5572c434e34a8659f1b42a179e36a3cfa7b95d"
+			]
+		},
+		"contracts/Ownable.sol": {
+			"keccak256": "0x823a876ae9c85a3963004e0bd1b06efa1c403f6ff5b6802f8da987dde000e9cc",
+			"urls": [
+				"bzzr://9c096368db20d74638c31e16f392878c06c9341d14e4cdee24d6af0eb4bd3d20"
+			]
+		},
+		"contracts/RecoveryLib.sol": {
+			"keccak256": "0xecc79053d37239f7a6c0860cbabbf4aa68d193e69515c329350ddead1e7d6122",
+			"urls": [
+				"bzzr://e4709f1b934ba2f779d04245eab0c874958087b292906180ed4b7a80b33592e3"
+			]
+		},
+		"contracts/RecoveryProxy.sol": {
+			"keccak256": "0xcca4ad1d700e82f27b0d9189a935630ce379a103842fe6d3146b273b775e3a86",
+			"urls": [
+				"bzzr://27023c3650c5ee0ef88e97a68139f8d58ee94e6891c4c80226a60adac0333c69"
+			]
+		},
+		"contracts/SafeMath/SafeMathLib256.sol": {
+			"keccak256": "0x8740538d437a7ace9712a59c994f7f77c9d1150ea28812834e66dd5cd713e5d4",
+			"urls": [
+				"bzzr://978ca097a9bf804f53db61e53215fd916dd733ef54e3af454aef115063cdeeb6"
+			]
+		},
+		"contracts/SafeMath/SafeMathLib32.sol": {
+			"keccak256": "0x7fc62442e048974263a6e80504c81e50d1ae52b4709dad3dcea138132adec208",
+			"urls": [
+				"bzzr://4b97c749aae5850c1065f69f4803e15715df07541ac92433a2e425e809c97df5"
+			]
+		},
+		"contracts/SafeMath/SafeMathLib64.sol": {
+			"keccak256": "0x9dff686eeac026c296aa2f91a3e32606f62842832ab3f942b92f7d9fb14d2068",
+			"urls": [
+				"bzzr://b1fb94d05acadb95e016e68938e7c8db29eaae14d6b3ad3f76f3c020f2f02ca0"
+			]
+		},
+		"contracts/WithdrawalLib.sol": {
+			"keccak256": "0x63a3ecbb8f44082dfa3f23bbb9220bcda82275f6c7c4f1f6213b6b92c2174503",
+			"urls": [
+				"bzzr://076837c66e2bd6d3dbcd997c720a4ccee1f5bcc7bf7fa24697064560c282c72a"
+			]
+		},
+		"contracts/WithdrawalProxy.sol": {
+			"keccak256": "0x14feade1fbf98efe88133ec516de0004a7ad959d51191248b9aa69d702b7ded1",
+			"urls": [
+				"bzzr://dc78a99b869d02c9c3aab9bc8acfe61b82b46497fbe59163da650a057d08cceb"
+			]
+		}
+	},
+	"version": 1
+}
