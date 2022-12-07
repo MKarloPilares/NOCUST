@@ -5,7 +5,7 @@ import "./Ownable.sol";
 import "./CloneFactory.sol";
 import "./NOCUSTCommitChain.sol";
 
-contract ChainCloneFactory is CloneFactory, Ownable {
+contract ChainClone is CloneFactory, Ownable {
     NOCUSTCommitChain[] public CommitChainAddresses;
     event CloneCreated(NOCUSTCommitChain chainClone);
 

@@ -1,7 +1,7 @@
 {
   "name": "nocust-contracts-solidity",
   "version": "0.8.0",
-  "description": "",
+  "description": "- Compiler: solc 0.4.24+commit.e67f0147.Emscripten.clang\r - NOCUST paper: https://eprint.iacr.org/2018/642.pdf\r - Technical specifications: http://specs.liquidity.network/\r - Website: http://liquidity.network/",
   "main": "truffle.js",
   "directories": {
     "test": "test"
@@ -33,5 +33,14 @@
     "istanbul": "^0.4.5",
     "solc": "^0.4.24",
     "solhint": "^2.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKarloPilares/NOCUST.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/MKarloPilares/NOCUST/issues"
+  },
+  "homepage": "https://github.com/MKarloPilares/NOCUST#readme"
 }
